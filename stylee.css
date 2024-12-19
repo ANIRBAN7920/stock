@@ -1,0 +1,98 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: rgba(0, 0, 0, 0.8); /* Slightly dark transparent background */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Transparent container */
+.container {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    text-align: center;
+}
+
+/* Heading */
+.container h1 {
+    font-size: 28px;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+/* Form */
+.prediction-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Labels */
+.prediction-form label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+    display: block;
+    margin-top: 20px; /* Large space between each label */
+}
+
+/* Input fields */
+.prediction-form input[type="text"],
+.prediction-form input[type="date"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2); /* Transparent input background */
+    color: #fff;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.prediction-form input[type="text"]:focus,
+.prediction-form input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+    background: rgba(255, 255, 255, 0.4); /* Slightly brighter on focus */
+}
+
+/* Button */
+.prediction-form button {
+    padding: 15px 20px;
+    font-size: 18px; /* Larger font size */
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    width: 100%; /* Button spans the form width */
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 20px; /* Space above the button */
+}
+
+.prediction-form button:hover {
+    background: #0056b3;
+    transform: scale(1.05); /* Slight pop effect */
+}
+
+/* Optional styles for placeholder */
+.prediction-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
